@@ -13,3 +13,8 @@ Every hook that `overcommit` runs will result in 1 of 3 ways:
 If you only encounter `WARNING`s and `OK`s, your changes will be successfully commited. If you generate a `FAILED` hook, your changes will stay staged until you resolve the violation. (In some odd causes, `overcommit` will stash your changes. If you lose your work during `overcommit` execution, try `git stash pop` to retrieve your changes.)
 
 For Nitro, some things that `overcommit` checks is that if you have added a migration(s), that it is in the correct location and has been run. It checks to make sure you have not created any Ruby linting offenses. And it also prevents you from commiting directly to master.
+
+## Resources
+
+- [overcommit](https://github.com/brigade/overcommit)
+- [Git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
